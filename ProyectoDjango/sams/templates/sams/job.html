@@ -63,6 +63,676 @@
             </div>
         </nav>
 
+        <main>
+            <!--Planifica tu evento-->
+            <section>
+                <div class="titulo2 mx-auto text-center py-5">
+                    <h1>PLANIFICA TU EVENTO</h1>
+                </div>
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-md-4 my-3">
+                            <div class="card h-100">
+                                <img src="{% static 'sams/img/job/candybar.jpg' %}" class="card-img-top img-cards w-100" alt="gala">
+                                <div class="card-body">
+                                    <h5 class="card-title">Galas</h5>
+                                    <p class="card-text h-50">Gestionamos tus galas ya sean de empresas, 
+                                    colegios, a tu medida y necesidades.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card h-100">
+                                <img src="{% static 'sams/img/job/matri5.jpg' %}" class="card-img-top img-cards w-100" alt="matrimonio">
+                                <div class="card-body">
+                                    <h5 class="card-title">Matrimonios</h5>
+                                    <p class="card-text h-50">Te ayudamos a la planificación y producción de tu día especial. Lleno de magia y 
+                                    satisfaciendo en su totalidad como imaginas sea el día mas especial de tu vida.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card h-100">
+                                <img src="{% static 'sams/img/job/despedida.jpg' %}" class="card-img-top img-cards w-100" alt="despedida-soltero">
+                                <div class="card-body">
+                                    <h5 class="card-title">Despedida de Solteros</h5>
+                                    <p class="card-text h-50">Por que se avecina el mejor día de sus vidas, planeamos tu ultima noche de 
+                                    soltería para que disfrutes como nunca.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-4 my-3">
+                            <div class="card h-100">
+                                <img src="{% static 'sams/img/job/babyshower1.jpg' %}" class="card-img-top img-cards w-100" alt="baby-shower">
+                                <div class="card-body">
+                                    <h5 class="card-title">Baby Shower</h5>
+                                    <p class="card-text h-50">La espera es un momento único para cada pareja, por ello te acompañamos y 
+                                    ayudamos en la planeación de tu evento para compartir la llegada de tu bebe junto a tus invitados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card h-100">
+                                <img src="{% static 'sams/img/job/bautizo1.jpg' %}" class="card-img-top img-cards w-100" alt="bautizo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bautizos</h5>
+                                    <p class="card-text h-50">Porque la presentación de tu bebe a dios es un momento especial te ayudamos a 
+                                    que esta celebración sea única.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <div class="card h-100">
+                                <img src="{% static 'sams/img/job/cumple.jpg' %}" class="card-img-top img-cards w-100" alt="cumple">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cumpleaños</h5>
+                                    <p class="card-text h-50">Celebraciones de todo tipo de cumpleaños y temáticas a tu medida.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center mb-5">
+                    <a class="btn btn-primary w-100 py-2" href="{% url 'cotizar' %}" role="button" target="_blank" rel="noopener noreferrer">Planifica tu evento aquí </a>
+                </div>
+            </section>
+
+            <!--Elige tu menú-->
+            <section>
+                <div class="titulo2 mx-auto text-center py-5">
+                    <h1>ELIGE TU MENÚ</h1>
+                </div>
+                <!--Menu simple-->
+                <div class="py-3" onmouseover="Mover(this)" onmouseout="MoverFuera(this)">
+                    <div class="container">
+                        <div class="text-center mb-3">
+                            <h2>Menú Simple</h2>
+                        </div>
+                        <div id="carousel1" class="carousel bg-menu slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel1" data-slide-to="1"></li>
+                            </ol>
+                            <!-- diapositivas -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container">
+                                        <div class="row my-3">
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <figure class="h-50">
+                                                        <img src="{% static 'sams/img/job/Imagenes menu/menu simple/entradas/cornet-jamon.jpg' %}" class="card-img-top img-cards w-100" alt="gala">
+                                                    </figure>
+                                                    <div class="card-body h-50">
+                                                        <h5 class="card-title pt-4">Cornet de Jamón con Puré de Palta</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <figure class="h-50">
+                                                        <img src="{% static 'sams/img/job/Imagenes menu/menu simple/entradas/Palta_Reina.jpg' %}" class="card-img-top img-cards w-100" alt="matrimonio">
+                                                    </figure>
+                                                    <div class="card-body h-50">
+                                                        <h5 class="card-title pt-4">Palta Reina</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <figure class="h-50">
+                                                        <img src="{% static 'sams/img/job/Imagenes menu/menu simple/entradas/ArrolladoHuaso.jpg' %}" class="card-img-top img-cards w-100" alt="despedida-soltero">
+                                                    </figure>
+                                                    <div class="card-body h-50">
+                                                        <h5 class="card-title pt-4">Arrollado de Huso en Papas Mayo</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="row my-3">
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <figure class="h-50">
+                                                        <img src="{% static 'sams/img/job/Imagenes menu/menu simple/platos de fondo/pechuga-de-pavo-a-la-mostaza.jpg' %}" class="card-img-top img-cards w-100" alt="gala">
+                                                    </figure>
+                                                    <div class="card-body h-50">
+                                                        <h5 class="card-title pt-4">Filete de Pavo a la Mostaza con Papas Duquesa</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <figure class="h-50">
+                                                        <img src="{% static 'sams/img/job/Imagenes menu/menu simple/platos de fondo/lomitoCerdo.jpg' %}" class="card-img-top img-cards w-100" alt="matrimonio">
+                                                    </figure>
+                                                    <div class="card-body h-50">
+                                                        <h5 class="card-title pt-4">Lomito de Cerdo con Chimichurri y Arroz Azafrán</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <figure class="h-50">
+                                                        <img src="{% static 'sams/img/job/Imagenes menu/menu simple/platos de fondo/PavoNaranja.jpg' %}" class="card-img-top img-cards w-100" alt="despedida-soltero">  
+                                                    </figure>
+                                                    <div class="card-body h-50">
+                                                        <h5 class="card-title pt-4">Pavo a la Naranja con Pure Bicolor</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- botones de desplazamiento a izquierda y derecha -->      
+                            <!-- <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a> -->
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary w-25 py-2" data-toggle="modal" data-target="#exampleModal">
+                            Más opciones
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">MENÚ SIMPLE</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-left">
+                                        <h5>Canaperia (rotativa)</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Esparrago- Pimentón</li>
+                                            <li>Choclo- Ciboulette </li>
+                                            <li>Pavo almendra</li>
+                                            <li>Jamón Acaramelado-Piña</li>
+                                            <li>Jamón-Queso </li>
+                                            <li>Huevos de Codorniz Multicolores </li>
+                                            <li>Salame con aceituna rellena</li>
+                                            <li>Palmito alcaparra </li>
+                                            <li>Kanikama – kétchup </li>
+                                            <li>Langostinos limoneta </li>
+                                        </ul>
+                                        <br>
+                                        <h5>Entre masas y servicio de brochetas</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Empanadas de Cocktail- Queso </li>
+                                            <li>Empanadas de Cocktail- Pino</li>
+                                            <li>Ceviche Reineta – Salmón </li>
+                                            <li>Brochetas de ave c/salsa limón mostaza </li>
+                                            <li>Pizzetas</li>
+                                            <li>Tapaditos (Jamón-Queso-mayo</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Servicio de Aperitivos</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Pisco Sour </li>
+                                            <li>Vaina Vainilla </li>
+                                            <li>Servicio Gaseosas </li>
+                                            <li>Jugos Naturales </li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de Entrada</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Cornet de jamón con pure de palta </li>
+                                            <li>Palta Reina</li>
+                                            <li>Arrollado Huaso en papas mayo</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de Plato de Fondo</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Filete de pavo a la mostaza con papas duquesa</li>
+                                            <li>Lomito de Cerdo con Chimichurri y Arroz Azafrán</li>
+                                            <li>Pavo a la Naranja con Pure Bicolor</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de postre</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Mousse de Frambuesa con salsa de Berries</li>
+                                            <li>Torta de panqueque de naranja</li>
+                                            <li>Mix de frutas Naturales de la estación</li>
+                                            <li>Mote con huesillo</li>
+                                            <li>Panqueques celestinos</li>
+                                            <li>Flan chocolate y vainilla con salsa acaramelada</li>
+                                            <li>Torta mil hojas</li>
+                                            <li>Dulces Chilenos</li>
+                                            <li>Suspiro limeño</li>
+                                            <li>Chocolate miniatura</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menu premium-->
+                <div class="py-3" onmouseover="Mover(this)" onmouseout="MoverFuera(this)">
+                    <div class="container">
+                        <div class="text-center mb-3">
+                            <h2>Menú Premium</h2>
+                        </div>
+                        <div id="carousel1" class="carousel bg-menu slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel1" data-slide-to="1"></li>
+                            </ol>
+                            <!-- diapositivas -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container">
+                                        <div class="row my-3">
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu premium/entradas/NidoCamarones.jpg' %}" class="card-img-top img-cards w-100" alt="gala">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Nido de Camarones en Salsa Americana y Limoneta</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu premium/entradas/fondoAlcachofa.jpg' %}" class="card-img-top img-cards w-100" alt="matrimonio">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Fondo de Alcachofas con Palta York en Nido de Porotos Verdes y Tomates</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu premium/entradas/jamoncEn lechuga.jpg' %}" class="card-img-top img-cards w-100" alt="despedida-soltero">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Filete de Pavo en Abanico de Palta</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="row my-3">
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu premium/platos de fondo/lomocon verduras.jpg' %}" class="card-img-top img-cards w-100" alt="gala">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Lomo Vetado con Boutequiere de Verduras</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu premium/platos de fondo/filetederes.jpg' %}" class="card-img-top img-cards w-100" alt="matrimonio">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Filete de Res con Arroz Árabe y Papas Duquesas</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu premium/platos de fondo/salmonconesparragos.jpg' %}" class="card-img-top img-cards w-100" alt="despedida-soltero">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Filete de Salmón en Salsa de Mantequilla y Pimienta, con Papas Duquesas y Boutequiere de Verduras</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- botones de desplazamiento a izquierda y derecha -->      
+                            <!-- <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a> -->
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary w-25" data-toggle="modal" data-target="#exampleModal2">
+                            Más opciones
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">MENÚ PREMIUM</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-left">
+                                        <h5>Canaperia (rotativa)</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Esparrago- Pimentón</li>
+                                            <li>Choclo- Ciboulette </li>
+                                            <li>Pavo almendra</li>
+                                            <li>Jamón Acaramelado-Piña</li>
+                                            <li>Jamón-Queso </li>
+                                            <li>Huevos de Codorniz Multicolores </li>
+                                            <li>Salame con aceituna rellena</li>
+                                            <li>Palmito alcaparra </li>
+                                            <li>Kanikama – kétchup </li>
+                                            <li>Langostinos limoneta </li>
+                                        </ul>
+                                        <br>
+                                        <h5>Entre masas y servicio de brochetas</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Empanadas de Cocktail- Queso </li>
+                                            <li>Empanadas de Cocktail- Pino</li>
+                                            <li>Ceviche Reineta – Salmón </li>
+                                            <li>Brochetas de ave c/salsa limón mostaza </li>
+                                            <li>Pizzetas</li>
+                                            <li>Tapaditos (Jamón-Queso-mayo)</li>
+                                            <li>Cubitos de cerdo con salsa en vino tinto</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Servicio de Aperitivos</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Pisco Sour </li>
+                                            <li>Vaina Vainilla </li>
+                                            <li>Servicio Gaseosas </li>
+                                            <li>Jugos Naturales </li>
+                                            <li>Vino</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de Entrada</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Nido de camarones en salsa americana y limoneta  </li>
+                                            <li>Fondo de alcachofas con palta york en nido de porotos verdes y tomates</li>
+                                            <li>Filete de pavo en abanico de palta </li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de Plato de Fondo</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Lomo vetado con boutequiere de verduras</li>
+                                            <li>Filete de res con arroz árabe y papas duquesas</li>
+                                            <li>Filete de Salmon en salsa de mantequilla y pimienta con papas duquesas y boutequiere de verduras</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de postre</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Mousse de Frambuesa con salsa de Berries</li>
+                                            <li>Torta de panqueque de naranja</li>
+                                            <li>Mix de frutas Naturales de la estación</li>
+                                            <li>Mote con huesillo</li>
+                                            <li>Panqueques celestinos</li>
+                                            <li>Flan chocolate y vainilla con salsa acaramelada</li>
+                                            <li>Torta mil hojas</li>
+                                            <li>Dulces Chilenos</li>
+                                            <li>Suspiro limeño</li>
+                                            <li>Chocolate miniatura</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menu gourmet-->
+                <div class="py-3" onmouseover="Mover(this)" onmouseout="MoverFuera(this)">
+                    <div class="container">
+                        <div class="text-center mb-3">
+                            <h2>Menú Gourmet</h2>
+                        </div>
+                        <div id="carousel1" class="carousel bg-menu slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel1" data-slide-to="1"></li>
+                            </ol>
+                            <!-- diapositivas -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container">
+                                        <div class="row my-3">
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu gourmet/entradas/coponLangostinos.jpg' %}" class="card-img-top img-cards w-100" alt="gala">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Copón de Langostinos en Salsa Americana Montada en Fondo de Lechuga en Copón de Aguas Colores</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu gourmet/entradas/fondos-de-alcachofas-rellenos.jpg' %}" class="card-img-top img-cards w-100" alt="matrimonio">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Fondo de Alcachofas Rellenas de Jamón Acaramelado Montado en Espejo de Pimientos Tricolor Grillados</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu gourmet/entradas/lechugaCamarones.jpg' %}" class="card-img-top img-cards w-100" alt="despedida-soltero">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Abanico de Palta Montado en Nido de Lechuga y Centro de Camarones Ecuatorianos en Ciboulette</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                        <div class="row my-3">
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu gourmet/platos de fondo/polloconverduras.jpg' %}" class="card-img-top img-cards w-100" alt="gala">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Filete de Pollo en Salsa de Mostaza con Verduras Grille y Papas Duquesas</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu gourmet/platos de fondo/filetederes.jpg' %}" class="card-img-top img-cards w-100" alt="matrimonio">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Filete de Res a la Mantequilla y Pimienta con Panaché de Verduras Grille</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 my-3">
+                                                <div class="card h-100">
+                                                    <img src="{% static 'sams/img/job/Imagenes menu/menu gourmet/platos de fondo/medalloncerdo.jpg' %}" class="card-img-top img-cards w-100" alt="despedida-soltero">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Medallón de Cerdo en Salsa de Vino Tinto con Papas Duquesas</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- botones de desplazamiento a izquierda y derecha -->      
+                            <!-- <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a> -->
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary w-25 py-2" data-toggle="modal" data-target="#exampleModal3">
+                            Más opciones
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">MENÚ GOURMET</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-left">
+                                        <h5>Canaperia (rotativa)</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Esparrago- Pimentón</li>
+                                            <li>Choclo- Ciboulette </li>
+                                            <li>Pavo almendra</li>
+                                            <li>Jamón Acaramelado-Piña</li>
+                                            <li>Jamón-Queso </li>
+                                            <li>Huevos de Codorniz Multicolores </li>
+                                            <li>Salame con aceituna rellena</li>
+                                            <li>Palmito alcaparra </li>
+                                            <li>Kanikama – kétchup </li>
+                                            <li>Langostinos limoneta </li>
+                                        </ul>
+                                        <br>
+                                        <h5>Entre masas y servicio de brochetas</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Empanadas de Cocktail- Queso </li>
+                                            <li>Empanadas de Cocktail- Pino</li>
+                                            <li>Ceviche Reineta – Salmón </li>
+                                            <li>Brochetas de ave c/salsa limón mostaza </li>
+                                            <li>Pizzetas</li>
+                                            <li>Tapaditos (Jamón-Queso-mayo)</li>
+                                            <li>Cubitos de cerdo con salsa en vino tinto</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Servicio de Aperitivos</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Pisco Sour </li>
+                                            <li>Vaina Vainilla </li>
+                                            <li>Servicio Gaseosas </li>
+                                            <li>Jugos Naturales </li>
+                                            <li>Vino</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de Entrada</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Copón de Langostinos en salsa americana montada en fondo de lechuga en copón de aguas colores</li>
+                                            <li>Fondo de alcachofas relleno de jamón acaramelado montado en espejo de tricolor de pimentones grille</li>
+                                            <li>Abanico de palta montado en nido de lechuga morada y centro de camarones ecuatorianos en ciboulette</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de Plato de Fondo</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Filete de pollo en salsa de mostaza con verduras grille con papas duquesas</li>
+                                            <li>Filete de res a la mantequilla y pimienta con panaché de verduras grille</li>
+                                            <li>Medallón de filete de cerdo en salsa de vino tinto con papas duquesas</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Opciones de postre</h5>
+                                        <br>
+                                        <ul>
+                                            <li>Tulipa de barquillo con arándanos en crema a la naranja y salsa chantilly</li>
+                                            <li>Copa de Terciopelo</li>
+                                            <li>Buffet de postres finos (shoot de suspiro limeño, shoot de barbarois, shoot de maracuyá, pie de limón, torta tres leches, torta de fresa, torta selva negra y de yogurt)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><hr><br>
+
+                <div class="container text-center mb-5">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary w-25 py-2" data-toggle="modal" data-target="#exampleModal4">
+                        Otras opciones
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Otras opciones</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <div id="caja">
+                                        <button type="button" id="otro-menu" class="btn btn-primary">Cargar Menús</button>
+                                    </div>
+                                    <br><br>
+
+                                    <table class="table" id="categorias">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Imagen</th>
+                                                <!-- <th scope="col">Descripción</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <!--Footer-->
         <footer>
             <div class="container-fluid w-100 text-light text-center py-4">
