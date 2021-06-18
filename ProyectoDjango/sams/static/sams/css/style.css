@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.titulo3{
+    background-color: orange;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+/*Formularios*/
+
+.error-control {
+    border: 1px solid red;
+}
+
+label.error {
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.etiqueta{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/*Navegador*/
+
+.navbar{
+    background-color:black;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*=========================================================================================================*/
+/*===================================================INDEX=================================================*/
+/*=========================================================================================================*/
+
+/*Encabezado*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-section.jpg");
+    height: 60vh;
+    width:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/*seccion de nuestros servicios*/
+.titulo2{
+    background-color: darkorange;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.img-ns1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/nuestros_servicios/transporte.jpg");
+    height: 300px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-ns2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/nuestros_servicios/decoración.jpg");
+    height: 300px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-ns3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/nuestros_servicios/cocina.jpg");
+    height: 300px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-ns4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/nuestros_servicios/show.jpg");
+    height: 300px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*seccion de eventos*/
+.img-carrusel1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/gala.jpg");
+    height: 80vh;
+    width:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-carrusel2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/matrimonio.jpg");
+    height: 80vh;
+    width:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-carrusel3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/despedida3.jpg");
+    height: 80vh;
+    width:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-carrusel4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/baby-shower.jpg");
+    height: 80vh;
+    width:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-carrusel5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/bautizo.png");
+    height: 80vh;
+    width:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-carrusel6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/inicio/fiesta-cumpleanos.jpg");
+    height: 80vh;
+    width:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*=========================================================================================================*/
+/*===================================================ABOUT=================================================*/
+/*=========================================================================================================*/
+
+/*seccion quienes somos*/
+.imagenes2{
+    height: 300px;
+    width: 100%;
+}
+
+/*=========================================================================================================*/
+/*===================================================JOBS==================================================*/
+/*=========================================================================================================*/
+
+.img-cards{
+    height: 200px;
+    width: 400px;
+}
