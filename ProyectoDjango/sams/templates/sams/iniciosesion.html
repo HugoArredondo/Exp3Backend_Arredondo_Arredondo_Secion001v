@@ -64,6 +64,27 @@
             </div>
         </nav>
 
+        <main class="text-center">
+            <div>
+                <h1 class="titulo3 py-4">Iniciar Sesión</h1>
+            </div>
+            <div class="container pt-4">
+                <form id="form-log" name="datos" method="POST" action="">
+                    <!--Usuario-->
+                    <label class="etiqueta" for="lnombreusu">Nombre Usuario:</label>
+                    <input type="text" id="user" name="user" value="" placeholder="Ingrese su nombre de usuario" onfocus="CambiaColor(this)" autofocus required ><br><br>
+                    <!--Contraseña-->
+                    <label class="etiqueta" for="lpassword">Contraseña Usuario:</label>
+                    <input type="password" id="password" name="password" value=""  placeholder="Ingrese su contraseña" minlength="8" onfocus="CambiaColor(this)" required><br><br>
+                    <!--Boton-->
+                    <input type="submit" class="btn btn-outline-danger" value="Iniciar Sesión">
+                </form>
+            </div>
+            <br>
+            <p class="text-primary">¿No tienes cuenta? Regístrate</p>
+            <a class="btn btn-danger mb-5" href="{% url 'registro' %}" role="button">Registrarse</a>
+        </main>
+
         <!--Footer-->
         <footer>
             <div class="container-fluid w-100 text-light text-center py-4">
