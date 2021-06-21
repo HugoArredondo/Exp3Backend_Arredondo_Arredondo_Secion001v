@@ -45,6 +45,7 @@ $(function()
             rules: {
                     name: "required",
                     ap: "required",
+                    rut: "required",
                     fecha: "required",
                     phone: "required",
                     email: {
@@ -65,6 +66,9 @@ $(function()
                 },
                 ap: {
                     required: 'Ingresa tu apellido',
+                },
+                rut: {
+                    required: 'Ingresa tu rut',
                 },
                 fecha:{
                     required: 'Seleccione una fecha válida',

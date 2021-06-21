@@ -71,11 +71,17 @@
             <div class="container pt-4">
                 <form id="form-log" name="datos" method="POST" action="">
                     <!--Usuario-->
-                    <label class="etiqueta" for="lnombreusu">Nombre Usuario:</label>
-                    <input type="text" id="user" name="user" value="" placeholder="Ingrese su nombre de usuario" onfocus="CambiaColor(this)" autofocus required ><br><br>
+                    <div>
+                        <label class="etiqueta" for="lnombreusu">Nombre Usuario:</label>
+                        <input type="text" id="user" name="user" value="" placeholder="Ingrese su nombre de usuario" onfocus="CambiaColor(this)" autofocus required >
+                    </div>
+                    <br><br>
                     <!--Contraseña-->
-                    <label class="etiqueta" for="lpassword">Contraseña Usuario:</label>
-                    <input type="password" id="password" name="password" value=""  placeholder="Ingrese su contraseña" minlength="8" onfocus="CambiaColor(this)" required><br><br>
+                    <div>
+                        <label class="etiqueta" for="lpassword">Contraseña Usuario:</label>
+                        <input type="password" id="password" name="password" value=""  placeholder="Ingrese su contraseña" minlength="8" onfocus="CambiaColor(this)" required>
+                    </div>
+                    <br><br>
                     <!--Boton-->
                     <input type="submit" class="btn btn-outline-danger" value="Iniciar Sesión">
                 </form>

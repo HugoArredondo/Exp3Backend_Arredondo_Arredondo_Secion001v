@@ -72,61 +72,90 @@
                 <!--Formulario para ingresar datos de cotización-->
                 <form id="form-quote" name="datos" action="index.html" method="POST">
                     <!--Nombre-->
-                    <label class="etiqueta" for="lnombre">Nombre:</label>
-                    <input type="text" id="name" class="text-capitalize" name="name" value="" placeholder="Ingrese su nombre " onfocus="CambiaColor(this)" autofocus required><br><br>
+                    <div>
+                        <label class="etiqueta" for="lnombre">Nombre:</label>
+                        <input type="text" id="name" class="text-capitalize" name="name" value="" placeholder="Ingrese su nombre " onfocus="CambiaColor(this)" autofocus required>
+                    </div>
+                    <br><br>
                     <!--Apellido-->
-                    <label class="etiqueta" for="lapellido">Apellido:</label>
-                    <input type="text" id="ap" class="text-capitalize" name="ap" value="" placeholder="Ingrese su apellido" onfocus="CambiaColor(this)" required><br><br>
+                    <div>
+                        <label class="etiqueta" for="lapellido">Apellido:</label>
+                        <input type="text" id="ap" class="text-capitalize" name="ap" value="" placeholder="Ingrese su apellido" onfocus="CambiaColor(this)" required>                      
+                    </div>
+                    <br><br>
                     <!--tipo radio solo para reservar una opcion de tipo de evento -->
                     <label class="etiqueta" for="ltipoeven">Seleccione tipo de Evento:</label><br>
-                    <input type="radio" id="babyshower" name="evento" value="babyshower">
-                    <label for="lbaby">Baby Shower</label><br>
-                    <input type="radio" id="matrimonio" name="evento" value="matrimonio">
-                    <label for="lmatri">Matrimonios</label><br>
-                    <input type="radio" id="despedida" name="evento" value="despedida">
-                    <label for="ldesp">Despedidas de Soltero(a)s</label><br>
-                    <input type="radio" id="bauti" name="evento" value="bauti">
-                    <label for="lbauti">Bautizos</label><br>
-                    <input type="radio" id="gala" name="evento" value="gala">
-                    <label for="lgala">Gala</label><br>
-                    <input type="radio" id="cumple" name="evento" value="cumple">
-                    <label for="lcumple">Cumpleaños</label><br>         
+                    <div>
+                        <input type="radio" id="babyshower" name="evento" value="babyshower">
+                        <label for="lbaby">Baby Shower</label><br>
+                        <input type="radio" id="matrimonio" name="evento" value="matrimonio">
+                        <label for="lmatri">Matrimonios</label><br>
+                        <input type="radio" id="despedida" name="evento" value="despedida">
+                        <label for="ldesp">Despedidas de Soltero(a)s</label><br>
+                        <input type="radio" id="bauti" name="evento" value="bauti">
+                        <label for="lbauti">Bautizos</label><br>
+                        <input type="radio" id="gala" name="evento" value="gala">
+                        <label for="lgala">Gala</label><br>
+                        <input type="radio" id="cumple" name="evento" value="cumple">
+                        <label for="lcumple">Cumpleaños</label><br>         
+                    </div>
                     <!--check box para poder elegir mas de una opcion de servicios a contratar-->
                     <label class="etiqueta" for="ltipo">Seleccione servicio(s) a contratar:</label><br>
-                    <input type="checkbox" id="tipo1" name="servicio" value="Dj">
-                    <label for="ltipo1">Show</label><br>
-                    <input type="checkbox" id="tipo2" name="servicio" value="Decoración">
-                    <label for="ltipo2">Decoración</label><br>
-                    <input type="checkbox" id="tipo3" name="servicio" value="Banqueteria">
-                    <label for="ltipo3">Banqueteria</label><br>
-                    <input type="checkbox" id="tipo4" name="servicio" value="Torta">
-                    <label for="ltipo4">Torta Personalizada</label><br>
+                    <div>
+                        <input type="checkbox" id="tipo1" name="servicio" value="Dj">
+                        <label for="ltipo1">Show</label><br>
+                        <input type="checkbox" id="tipo2" name="servicio" value="Decoración">
+                        <label for="ltipo2">Decoración</label><br>
+                        <input type="checkbox" id="tipo3" name="servicio" value="Banqueteria">
+                        <label for="ltipo3">Banqueteria</label><br>
+                        <input type="checkbox" id="tipo4" name="servicio" value="Torta">
+                        <label for="ltipo4">Torta Personalizada</label><br>
+                    </div>
                     <!--Fecha evento-->
-                    <label class="etiqueta" for="fevent">Fecha Evento:</label>
-                    <input type="date" id="event" name="event" min="2021-01-01" max="2021-12-31" required><br><br>
+                    <div>
+                        <label class="etiqueta" for="fevent">Fecha Evento:</label>
+                        <input type="date" id="event" name="event" min="2021-01-01" max="2021-12-31" required>
+                    </div>
+                    <br><br>
                     <!--radio solo para elgir un tipo de menu-->
                     <label class="etiqueta" for="ltipomenu">Seleccione tipo de menú:</label><br>
-                    <input type="radio" id="simple" name="menu" value="simple">
-                    <label for="lsimple">Menú Simple</label><br>
-                    <input type="radio" id="premium" name="menu" value="premium">
-                    <label for="lpremium">Menú Premium</label><br>
-                    <input type="radio" id="gourmet" name="menu" value="gourmet">
-                    <label for="lgourmet">Menu Gourmet</label><br>
+                    <div>
+                        <input type="radio" id="simple" name="menu" value="simple">
+                        <label for="lsimple">Menú Simple</label><br>
+                        <input type="radio" id="premium" name="menu" value="premium">
+                        <label for="lpremium">Menú Premium</label><br>
+                        <input type="radio" id="gourmet" name="menu" value="gourmet">
+                        <label for="lgourmet">Menu Gourmet</label><br>
+                    </div>
                     <!--Cantidad-->
-                    <label class="etiqueta" for="lcantidad">Cantidad de personas:</label>
-                    <input type="number" id="cant" name="cant" value="" placeholder="Ingrese cantidad de personas por las cuales desea Cotizar" onfocus="CambiaColor(this)" required><br><br>
+                    <div>
+                        <label class="etiqueta" for="lcantidad">Cantidad de personas:</label>
+                        <input type="number" id="cant" name="cant" value="" placeholder="Ingrese cantidad de personas por las cuales desea Cotizar" onfocus="CambiaColor(this)" required>
+                    </div>
+                    <br><br>
                     <!--Lugar-->
-                    <label class="etiqueta" for="llugar">Lugar:</label>
-                    <input type="text" id="lugar" class="text-capitalize" name="lugar" value="" placeholder="Ingrese el lugar donde realizara el evento en caso de que disponga de uno" onfocus="CambiaColor(this)"><br><br>
+                    <div>
+                        <label class="etiqueta" for="llugar">Lugar:</label>
+                        <input type="text" id="lugar" class="text-capitalize" name="lugar" value="" placeholder="Ingrese el lugar donde realizara el evento en caso de que disponga de uno" onfocus="CambiaColor(this)">
+                    </div>
+                    <br><br>
                     <!--Correo-->
-                    <label class="etiqueta" for="email">Correo:</label>
-                    <input type="email" id="email" name="email" value="" placeholder="Ingrese su correo" onfocus="CambiaColor(this)"><br><br>
+                    <div>
+                        <label class="etiqueta" for="email">Correo:</label>
+                        <input type="email" id="email" name="email" value="" placeholder="Ingrese su correo" onfocus="CambiaColor(this)">
+                    </div>
+                    <br><br>
                     <!--Comentario-->
-                    <label class="etiqueta" for="mensaje">Ingrese comentarios sobre su evento:</label><br>
-                    <textarea cols="80" rows="5" id="mensaje" name="mensaje" maxlength="2000"></textarea><br><br>
+                    <div>
+                        <label class="etiqueta" for="mensaje">Ingrese comentarios sobre su evento:</label><br>
+                        <textarea cols="80" rows="5" id="mensaje" name="mensaje" maxlength="2000"></textarea><br><br>
+                    </div>
                     <!--Botones-->
-                    <input type="submit" id="enviar" class="btn btn-danger" value="Enviar">
-                    <input type= "reset" class="btn btn-primary" onclick="alert('datos limpiados correctamente')" value="Limpiar"><br><br>
+                    <div>
+                        <input type="submit" id="enviar" class="btn btn-danger" value="Enviar">
+                        <input type= "reset" class="btn btn-primary" onclick="alert('datos limpiados correctamente')" value="Limpiar">
+                    </div>
+                    <br><br>
                 </form>
             </div>
         </main>
