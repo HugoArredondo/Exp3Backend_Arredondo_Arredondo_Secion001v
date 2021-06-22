@@ -46,3 +46,8 @@ def registrarse_modificar(request,id):
             return redirect('ver-registro')
 
     return render(request, 'sams/registrarse_modificar.html', datos)
+
+def registrarse_eliminar(request,id):
+    registro = Registro.objects.get(rutRegistro=id)
+    registro.delete()
+    return redirect('ver-registro')

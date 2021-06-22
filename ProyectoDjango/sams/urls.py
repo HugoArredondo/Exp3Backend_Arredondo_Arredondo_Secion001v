@@ -10,4 +10,5 @@ urlpatterns = [
     path('registro-usuario/', views.registrarse, name="registro-usuario"),
     path('ver-registro/', views.registrarse_ver, name="ver-registro"),
     path('modificar-registro/<id>', views.registrarse_modificar, name="modificar-registro"),
+    path('eliminar-registro/<id>', views.registrarse_eliminar, name="eliminar-registro"),
 ]

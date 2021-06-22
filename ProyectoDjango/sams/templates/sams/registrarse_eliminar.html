@@ -33,7 +33,7 @@
         <link href="{% static 'sams/css/style.css' %}" rel="stylesheet">
 
         <!--Titulo-->
-        <title>Ver Registros</title>
+        <title>Modificar Registro</title>
     </head>
     <body>
         <!-- navegador -->
@@ -65,52 +65,11 @@
         </nav>
 
         <main class="text-center">
-            <h1 class="titulo3 py-4">Ver Registros</h1>
-            <div class="container">
-                <div class="row">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Rut</th>
-                                <th scope="col">DV</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Apellido</th>
-                                <th scope="col">Facha de Nacimiento</th>
-                                <th scope="col">Número de Contacto</th>
-                                <th scope="col">Correo</th>
-                                <th scope="col">Nombre de Usuario</th>
-                                <th scope="col">Contraseña</th>
-                                <th scope="col">Repetir Contraseña</th>
-                                <th scope="col">Opciones</th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for reg in registro %}
-                                <tr>
-                                    <td>{{reg.rutRegistro}}</td>
-                                    <td>{{reg.dvRegistro}}</td>
-                                    <td>{{reg.nombreRegistro}}</td>
-                                    <td>{{reg.apellidoRegistro}}</td>
-                                    <td>{{reg.fechaNacimientoRegistro}}</td>
-                                    <td>{{reg.numContactoRegistro}}</td>
-                                    <td>{{reg.correoRegistro}}</td>
-                                    <td>{{reg.nombreUsuarioRegistro}}</td>
-                                    <td>{{reg.contraseñaRegistro}}</td>
-                                    <td>{{reg.repetirContraseñaRegistro}}</td>
-                                    <td><a href="{% url 'modificar-registro' reg.rutRegistro %}" class="btn btn-danger">Modificar</a></td>
-                                    <td><a href="{% url 'eliminar-registro' reg.rutRegistro %}" class="btn btn-warning">Eliminar</a></td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-                <a href="{% url 'registro-usuario' %}" class="btn btn-danger mb-5">Registrar Usuario</a>
-            </div>
+            <h1 class="titulo3 py-4">Eliminando Registro</h1>
         </main>
 
         <!--Footer-->
-        <footer class="fixed bottom">
+        <footer class="fixed-bottom">
             <div class="container-fluid w-100 text-light text-center py-4">
                 <div class="row">
                     <div class="col-md-4 py-2">
