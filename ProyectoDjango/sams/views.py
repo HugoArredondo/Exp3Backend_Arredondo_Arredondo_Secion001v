@@ -28,3 +28,21 @@ def registrarse(request):
         registro = RegistroForm()
 
     return render (request, 'sams/registrarse.html', {'registro': registro})
+
+def registrarse_ver(request):
+    registro = Registro.objects.all()
+
+    return render(request, 'sams/registrarse_ver.html', context={'registro':registro})
+
+def registrarse_modificar(request,id):
+    registro = Registro.objects.get(rutRegistro=id)
+    datos = {
+        'form': RegistroForm(instance=registro)
+    }
+    if request.method=='POST':
+        formulario = RegistroForm(data=request.POST, instance = registro)
+        if formulario.is_valid():
+            formulario.save()
+            return redirect('ver-registro')
+
+    return render(request, 'sams/registrarse_modificar.html', datos)

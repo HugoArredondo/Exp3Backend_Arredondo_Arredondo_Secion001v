@@ -1,0 +1,140 @@
+<html lang="es">
+    <head>
+        <!--Etiquetas meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <!--Google Font Cabin(Regular y bold)-->
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!--Google Font Lobster(Regular)-->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+        <!--Google Font Roboto(Italic Bold)-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+        <!-- Optional JavaScript -->
+            <!-- jQuery first, Validate.js, then Bootstrap JS -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        {% load static %}
+        <!--Mi Script JS-->
+        <script src="{% static 'sams/js/script.js' %}"></script>
+
+        <!--Hoja de estilo-->
+        <link href="{% static 'sams/css/style.css' %}" rel="stylesheet">
+
+        <!--Titulo-->
+        <title>Ver Registros</title>
+    </head>
+    <body>
+        <!-- navegador -->
+        <nav class="navbar navbar-expand-sm navbar-dark text-white py-3">
+            <div class="container w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'sams/img/logo-sams-4.jpg' %}" width="30" height="30" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="opciones">   
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'job' %}">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'iniciosesion' %}">Iniciar Sesión</a>
+                        </li>              
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="text-center">
+            <h1 class="titulo3 py-4">Ver Registros</h1>
+            <div class="container">
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Rut</th>
+                                <th scope="col">DV</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Facha de Nacimiento</th>
+                                <th scope="col">Número de Contacto</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Nombre de Usuario</th>
+                                <th scope="col">Contraseña</th>
+                                <th scope="col">Repetir Contraseña</th>
+                                <th scope="col">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for reg in registro %}
+                                <tr>
+                                    <td>{{reg.rutRegistro}}</td>
+                                    <td>{{reg.dvRegistro}}</td>
+                                    <td>{{reg.nombreRegistro}}</td>
+                                    <td>{{reg.apellidoRegistro}}</td>
+                                    <td>{{reg.fechaNacimientoRegistro}}</td>
+                                    <td>{{reg.numContactoRegistro}}</td>
+                                    <td>{{reg.correoRegistro}}</td>
+                                    <td>{{reg.nombreUsuarioRegistro}}</td>
+                                    <td>{{reg.contraseñaRegistro}}</td>
+                                    <td>{{reg.repetirContraseñaRegistro}}</td>
+                                    <td><a href="{% url 'modificar-registro' reg.rutRegistro %}" class="btn btn-danger">Modificar</a></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid w-100 text-light text-center py-4">
+                <div class="row">
+                    <div class="col-md-4 py-2">
+                        <h5>SAM'S</h5>
+                        <h6>©2021 SAM'S Producciones. Todos los derechos reservados.</h6>
+                        <h6>Diseño: Hugo Arredondo / María Arredondo</h6>
+                    </div>
+                    <div class="col-md-4 py-2">
+                        <h5>Contáctanos:</h5>
+                        <h6>+56974676861</h6>
+                        <h6>sams.producciones@gmail.com</h6>
+                    </div>
+                    <div class="col-md-4 py-2">
+                        <div class="container">
+                            <h5>Síguenos</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-4x mr-3 text-white"></i></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram fa-4x mr-3 text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
