@@ -43,9 +43,10 @@ $(function()
       {
         $("#form-reg").validate({
             rules: {
+                    rut: "required",
+                    dv: "required",
                     name: "required",
                     ap: "required",
-                    rut: "required",
                     fecha: "required",
                     phone: "required",
                     email: {
@@ -61,14 +62,17 @@ $(function()
                     
             }, //rules
             messages: {
+                rut: {
+                    required: 'Ingresa tu rut',
+                },
+                dv: {
+                    required: 'Ingresa dígito verificador',
+                },
                 name: {
                     required: 'Ingresa tu nombre',
                 },
                 ap: {
                     required: 'Ingresa tu apellido',
-                },
-                rut: {
-                    required: 'Ingresa tu rut',
                 },
                 fecha:{
                     required: 'Seleccione una fecha válida',

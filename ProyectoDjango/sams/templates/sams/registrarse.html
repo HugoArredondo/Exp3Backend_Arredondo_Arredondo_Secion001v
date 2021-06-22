@@ -69,62 +69,64 @@
                 <h1 class="titulo3 py-4">Regístrate</h1>
             </div>
             <div class="container pt-4">
-                <h6>Es rápido y fácil</h6>
+                <h6>Es rápido y fácil</h6><br>
                 <form id="form-reg" name="datos" method="POST" action="index.html">
+                    <!--Rut-->
+                    <div class="d-inline">
+                        <p>
+                            <label class="etiqueta" for="lrut">Rut:</label>
+                            <input type="text" id="rut" name="rut" value="" placeholder="11111111" onfocus="CambiaColor(this)" autofocus required> -
+                            <input type="text" id="dv" name="dv" value="" placeholder="k" onfocus="CambiaColor(this)" required>
+                        </p>
+                    </div>
                     <!--Nombre-->
                     <div>
                         <label class="etiqueta" for="lnom">Nombre:</label>
-                        <input type="text" id="name" class="text-capitalize" name="name" value="" placeholder="Ingrese su nombre " onfocus="CambiaColor(this)" autofocus required>
+                        <input type="text" id="name" class="text-capitalize" name="name" value="" placeholder="Ingrese su nombre " onfocus="CambiaColor(this)" required>
                     </div>
-                    <br><br>
+                    <br>
                     <!--Apellido-->
                     <div>
                         <label class="etiqueta" for="lapelli">Apellido:</label>
                         <input type="text" id="ap" class="text-capitalize" name="ap" value="" placeholder="Ingrese su apellido" onfocus="CambiaColor(this)" required>
                     </div>
-                    <br><br>
-                    <!--Rut-->
-                    <div>
-                        <label class="etiqueta" for="lrut">Rut:</label>
-                        <input type="text" id="rut" class="text-capitalize" name="rut" value="" placeholder="Ingrese su rut" required>
-                    </div>
-                    <br><br>
+                    <br>
                     <!--Fecha Nacimiento-->
                     <div>
                         <label class="etiqueta" for="fnac">Fecha de Nacimiento:</label>
                         <input type="date" id="fecha" name="fecha" min="1901-01-01" max="2020-12-31" required>
                     </div>
-                    <br><br>
+                    <br>
                     <!--Nro Contacto-->
                     <div>
                         <label class="etiqueta" for="lphone">Ingrese su número de contacto (+569):</label>
                         <input type="text" id="phone" name="phone" placeholder="9999 9999" minlength="8" onfocus="CambiaColor(this)" required>
                     </div>
-                    <br><br>
+                    <br>
                     <!--Correo-->
                     <div>
                         <label class="etiqueta" for="lemail">Ingrese su Correo:</label>
                         <input type="email" id="email" name="email" value="" placeholder="nombre@dominio.cl" onfocus="CambiaColor(this)" required>
                     </div>
-                    <br><br>
+                    <br>
                     <!--Usuario-->
                     <div>
                         <label class="etiqueta" for="lnombreusua">Nombre Usuario:</label>
                         <input type="text" id="user" name="user" value="" placeholder="Usuario" onfocus="CambiaColor(this)" required>
                     </div>
-                    <br><br>
+                    <br>
                     <!--Contraseña-->
                     <div>
                         <label class="etiqueta" for=lcontrausua>Contraseña:</label>
                         <input type="password" id="password" name="password" value=""  placeholder="Escribir contraseña" minlength="8" onfocus="CambiaColor(this)" required>
                     </div>
-                    <br><br>
+                    <br>
                     <!--Repetir Contraseña-->
                     <div>
                         <label class="etiqueta" for=lcontrausua>Repetir Contraseña:</label>
                         <input type="password" id="password2" name="password2" value=""  placeholder="Repetir contraseña" minlength="8" onfocus="CambiaColor(this)" required>
                     </div>
-                    <br><br>
+                    <br>
                     <!--Botones-->
                     <input type="submit" id="enviar" class="btn btn-danger" value="Registrar">
                 </form>
